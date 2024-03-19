@@ -15,5 +15,8 @@
   "workspaces": [
     "src/MomoMarketLinkAdminDashboard_backend",
     "src/MomoMarketLinkAdminDashboard_frontend"
-  ]
+  ],
+  "devDependencies": {
+    "esbuild": "0.20.2"
+  }
 }

@@ -1,30 +1,33 @@
-import { useState } from 'react';
-import { MomoMarketLinkAdminDashboard_backend } from 'declarations/MomoMarketLinkAdminDashboard_backend';
+import { Routes, Route, BrowserRouter } from "react-router-dom"
+import Dashboard from "./Pages/Dashboard";
+import Login from "./Pages/Login";
+import Wallet from "./Pages/Wallet";
+import Delivery from "./Pages/Delivery";
+import Transactions from "./Pages/Transactions";
+import Dispute from "./Pages/Dispute";
+import ActiveDisputes from "./Pages/ActiveDisputes";
+import PastDispute from "./Pages/PastDispute"
+import ResolveDispute from "./Pages/ResolveDispute";
 
 function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    MomoMarketLinkAdminDashboard_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
-
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/wallet" element={<Wallet />} />
+        <Route path="/transactions" element={<Transactions />} />
+        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/dispute" element={<Dispute />} />
+        <Route path="/activedisputes" element={<ActiveDisputes />} />
+        <Route path="/resolveddisputes" element={<PastDispute />} />
+        <Route path="/resolvedispute/id" element={<ResolveDispute />} />
+
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
