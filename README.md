@@ -1,10 +1,16 @@
-# MomoMarketLinkAdminDashboard
+# Escrow-Mate: Ensuring Trust and Security in Online Transactions
 
-Welcome to your new MomoMarketLinkAdminDashboard project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+In the realm of digital commerce, establishing trust between transacting parties remains a significant challenge. The absence of a reliable intermediary exposes buyers and sellers to fraud and disputes, hindering the growth of e-commerce. The proposed solution, the Digital Escrow Link app, aims to address this by providing a versatile, secure, and transparent platform for online transactions.
+Utilizing blockchain technology and smart contracts, the app ensures tamper-proof transaction records and automates fund release based on predefined conditions. Integration with payment APIs, such as MTN Mobile Money, facilitates seamless fund transfers. A user-friendly interface, customizable transaction conditions, and dispute resolution enhance user experience and mitigate conflicts.
+The app's multi-industry application and cross-border transaction compatibility make it suitable for diverse sectors and regions. Revenue generation through escrow fees and premium features ensures financial sustainability. By fostering confidence and reliability in online transactions, the Digital Escrow Link app aims to revolutionize digital commerce and empower businesses and individuals worldwide.
+
+## Installation instructions:
+
+Welcome to your new Escrow-Mate project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
 
-To learn more before you start working with MomoMarketLinkAdminDashboard, see the following documentation available online:
+To learn more before you start working with Escrow-Mate, see the following documentation available online:
 
 - [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
 - [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
